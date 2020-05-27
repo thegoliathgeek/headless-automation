@@ -1,0 +1,25 @@
+{
+  "name": "headless-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "ts-node-dev --respawn --transpileOnly ./index.ts",
+    "init": "tsc --init"
+  },
+  "keywords": [],
+  "author": "imdhanush",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "puppeteer": "^3.1.0",
+    "typescript": "^3.9.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.5",
+    "@types/puppeteer": "^3.0.0",
+    "ts-node-dev": "^1.0.0-pre.44"
+  }
+}
