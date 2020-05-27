@@ -66,6 +66,8 @@ export default class LoginRegisterRoute{
         appExpress.post('/ventis/register',async (req:Request, res:Response)=>{
             const {email, password} = req.body;
             const browser = await puppeteer.launch({
+                args: ['--no-sandbox'],
+                timeout: 10000,
                 defaultViewport: {
                     'width': 1024, 'height': 1600
                 },
