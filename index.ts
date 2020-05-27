@@ -12,6 +12,6 @@ app.use(express.json());
 app.use('/',LoginRegister.Route())
 
 
-app.listen(process.env.PORT || 3000, ()=>{
-console.log('Sever running on port 3000');
+app.listen(process.env.DEFAULT_PORT, ()=>{
+console.log('Sever running on port '+process.env.DEFAULT_PORT);
 });
