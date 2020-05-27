@@ -1,0 +1,8 @@
+{
+    "apps":[
+    {
+        "name": "RPA-Automation",
+        "script": "npm run start:dev"
+    }
+    ]
+}
