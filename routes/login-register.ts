@@ -9,7 +9,14 @@ export default class LoginRegisterRoute{
 
     static Route(){
         const appExpress = express.Router();
-        appExpress.post('/ventis/login',async (req:Request, res:Response)=>{
+
+        appExpress.get('/',(req: Request, res: Response)=>{
+            res.status(200).json({
+                error: false,
+                message: `You are in wrong place`
+            });
+        });
+;        appExpress.post('/ventis/login',async (req:Request, res:Response)=>{
             const {email, password} = req.body;
             const browser = await puppeteer.launch({
                 args: ['--no-sandbox'],
